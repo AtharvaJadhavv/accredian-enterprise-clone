@@ -33,7 +33,7 @@ const industries = [
 
 export default function Industries() {
   return (
-    <section className="bg-white py-24">
+    <section id="industries" className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-[#7c6ff7]">WHAT WE OFFER</p>

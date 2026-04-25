@@ -47,6 +47,7 @@ export default function Hero() {
             </button>
             <button
               type="button"
+              onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
               className="ml-0 rounded-xl border border-white/20 bg-white/10 px-8 py-4 text-base font-semibold text-white backdrop-blur transition hover:bg-white/20 sm:ml-4"
             >
               Watch Demo ▶

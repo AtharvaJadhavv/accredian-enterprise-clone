@@ -30,7 +30,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-gradient-to-br from-[#faf7ff] to-[#f0f4ff] py-24">
+    <section id="testimonials" className="bg-gradient-to-br from-[#faf7ff] to-[#f0f4ff] py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-4 flex items-center justify-center gap-2">
           <span className="text-lg text-amber-400">★★★★★</span>

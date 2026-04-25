@@ -2,7 +2,12 @@
 
 import { useEffect, useState } from "react";
 
-const navLinks = ["Solutions", "Industries", "Resources", "About Us"];
+const navLinks = [
+  { label: "Solutions", sectionId: "features" },
+  { label: "Industries", sectionId: "industries" },
+  { label: "Resources", sectionId: "howitworks" },
+  { label: "About Us", sectionId: "testimonials" },
+];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,8 +33,8 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a href="#" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-[#1a1033]">Accredian</span>
-          <span className="rounded-full bg-[#ede9fe] px-2 py-0.5 text-xs font-semibold text-[#5b21b6]">
+          <span className="text-2xl font-black text-[#1a1033]">Accredian</span>
+          <span className="ml-2 rounded-full bg-[#ede9fe] px-2.5 py-1 text-xs font-bold text-[#5b21b6]">
             ENTERPRISE
           </span>
         </a>
@@ -64,10 +69,14 @@ export default function Navbar() {
         <div className="hidden items-center gap-8 md:flex">
           <ul className="flex items-center gap-8">
             {navLinks.map((link) => (
-              <li key={link}>
-                <a href="#" className="text-sm font-medium text-gray-500 transition hover:text-[#7c6ff7]">
-                  {link}
-                </a>
+              <li key={link.label}>
+                <button
+                  type="button"
+                  onClick={() => document.getElementById(link.sectionId)?.scrollIntoView({ behavior: "smooth" })}
+                  className="text-gray-500 text-sm hover:text-[#7c6ff7] transition font-medium bg-transparent border-none cursor-pointer"
+                >
+                  {link.label}
+                </button>
               </li>
             ))}
           </ul>
@@ -88,14 +97,17 @@ export default function Navbar() {
       >
         <ul className="space-y-1 pt-3">
           {navLinks.map((link) => (
-            <li key={link}>
-              <a
-                href="#"
-                className="block rounded-md px-3 py-2 text-sm font-medium text-gray-500 transition hover:bg-gray-100 hover:text-[#7c6ff7]"
-                onClick={() => setIsMenuOpen(false)}
+            <li key={link.label}>
+              <button
+                type="button"
+                onClick={() => {
+                  document.getElementById(link.sectionId)?.scrollIntoView({ behavior: "smooth" });
+                  setIsMenuOpen(false);
+                }}
+                className="text-gray-500 text-sm hover:text-[#7c6ff7] transition font-medium bg-transparent border-none cursor-pointer"
               >
-                {link}
-              </a>
+                {link.label}
+              </button>
             </li>
           ))}
         </ul>
