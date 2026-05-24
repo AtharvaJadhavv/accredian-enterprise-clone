@@ -1,6 +1,6 @@
 # 🚀 Next.js Project
 
-A modern web application built with <a href="https://nextjs.org">Next.js</a> its a clone website, bootstrapped using <a href="https://nextjs.org/docs/app/api-reference/cli/create-next-app">create-next-app</a>.
+A modern web application built with <a href="https://nextjs.org">Next.js</a> its a clone website where , bootstrapped using <a href="https://nextjs.org/docs/app/api-reference/cli/create-next-app">create-next-app</a>.
 This project leverages the power of React, TypeScript, and the App Router architecture to deliver a fast, scalable, and optimized user experience.
 
 ---
