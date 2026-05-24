@@ -79,6 +79,9 @@ To learn more about the technologies used in this project:
 * <a href="https://nextjs.org/docs">Next.js Documentation</a>
 * <a href="https://nextjs.org/learn">Learn Next.js</a>
 * <a href="https://github.com/vercel/next.js">Next.js GitHub Repository</a>
+* <a href="https://nextjs.org/docs">Next.js Documentation</a>
+* <a href="https://nextjs.org/learn">Learn Next.js</a>
+* <a href="https://github.com/vercel/next.js">Next.js GitHub Repository</a>
 
 ---
 
