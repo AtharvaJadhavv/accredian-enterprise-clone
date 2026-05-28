@@ -12,7 +12,7 @@ This project leverages the power of React, TypeScript, and the App Router archit
 * 🔥 Fast Refresh for instant development updates
 * 📱 Responsive and scalable architecture
 * 🛠 TypeScript support
-* 🚀 Optimized production deployment with Vercel
+* 🚀 production deployment with Vercel
 
 ---
 
